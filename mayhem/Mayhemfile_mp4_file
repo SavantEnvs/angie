@@ -1,0 +1,9 @@
+project: savantenvs/angie
+target: mp4_file
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/mp4_file/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_mp4_file
+    libfuzzer: true
+    timeout: 10

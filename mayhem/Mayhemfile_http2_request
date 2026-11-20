@@ -1,0 +1,9 @@
+project: savantenvs/angie
+target: http2_request
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/http2_request/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_http2_request
+    libfuzzer: true
+    timeout: 10

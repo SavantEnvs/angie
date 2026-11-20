@@ -1,0 +1,9 @@
+project: savantenvs/angie
+target: uwsgi_reply
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/uwsgi_reply/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_uwsgi_reply
+    libfuzzer: true
+    timeout: 10

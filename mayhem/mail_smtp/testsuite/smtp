@@ -1,0 +1,4 @@
+EHLO x
+AUTH PLAIN AGZvbwBiYXI=
+MAIL FROM:<a@b>
+RCPT TO:<c@d>

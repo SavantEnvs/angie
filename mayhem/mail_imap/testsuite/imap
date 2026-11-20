@@ -1,0 +1,6 @@
+a1 CAPABILITY
+a2 LOGIN {3}
+foo {3}
+bar
+a3 AUTHENTICATE PLAIN
+AGZvbwBiYXI=

@@ -1,0 +1,9 @@
+project: savantenvs/angie
+target: mail_pop3_proxy_reply
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/mail_pop3_proxy_reply/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_mail_pop3_proxy_reply
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,6 @@
+220 mx.example ESMTP
+250-mx.example
+250-AUTH PLAIN
+250 8BITMIME
+235 2.0.0 OK
+250 ok

@@ -1,0 +1,9 @@
+project: savantenvs/angie
+target: stream_ssl_preread
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/stream_ssl_preread/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_stream_ssl_preread
+    libfuzzer: true
+    timeout: 10

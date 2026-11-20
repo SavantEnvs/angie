@@ -1,0 +1,9 @@
+project: savantenvs/angie
+target: proxy_v2_reply
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/proxy_v2_reply/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_proxy_v2_reply
+    libfuzzer: true
+    timeout: 10

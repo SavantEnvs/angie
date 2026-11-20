@@ -1,0 +1,9 @@
+project: savantenvs/angie
+target: scgi_reply
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/scgi_reply/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_scgi_reply
+    libfuzzer: true
+    timeout: 10
